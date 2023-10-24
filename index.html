@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Strings</title>
+</head>
+<body>
+
+    <form>
+        <label>Zu trennende Zeichenkette:</label>
+        <br><br>
+        <input type="text" id="textInput">
+        <br><br>
+
+        <label for="">Woran trennen?</label>
+        <br><br>
+
+        <input type="text" id="trenner">
+        <input type="radio" name="answer" id="davor" value="davor" onchange="which(1)">
+        <label for="">Davor</label>
+        <input type="radio" name="answer" id="danach" value="danach"
+        onchange="which(2)">
+        <label for="danach">Danach</label>
+        <br><br>
+
+        <input type="submit" value="Klick mich" onclick="trennen()">
+    </form>
+    <p></p>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
