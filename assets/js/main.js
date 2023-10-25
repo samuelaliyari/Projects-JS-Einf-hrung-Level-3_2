@@ -21,6 +21,6 @@ function trennen() {
     if (davor) {
         output.innerHTML = `${txt.slice(0, slicer)} <br> ${txt.slice(slicer)}`
     } else {
-        output.innerHTML = `${txt.slice(0, slicer +1)} <br> ${txt.slice(slicer +1)}`
+        output.innerHTML = `${txt.slice(0, slicer + trennPunkt.length)} <br> ${txt.slice(slicer + trennPunkt.length)}`
     }
 }
